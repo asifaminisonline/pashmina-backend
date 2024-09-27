@@ -9,7 +9,7 @@ const tapeSchema = new mongoose.Schema({
   tapeSize: { type: String, required: true },
   shawlWidth: { type: Number, required: true },
   isEqualSection: { type: Boolean, required: true },
-  image: { type: String }, // Path or URL to the image
+  image: { type: String }, // Base64 string of the image
 });
 
 const Tape = mongoose.model('Tape', tapeSchema);
